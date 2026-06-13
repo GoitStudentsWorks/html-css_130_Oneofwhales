@@ -6,8 +6,6 @@
 }
 
 .faq-title-container {
-  font-weight: 400;
-
   margin-bottom: 16px;
 }
 
@@ -16,11 +14,13 @@
   letter-spacing: -0.01em;
   font-size: 36px;
   font-family: var(--font-family-secondary);
+  font-weight: 400;
 
   margin-bottom: 8px;
 }
 
 .faq-description {
+  font-weight: 400;
   font-size: 18px;
 }
 
@@ -108,6 +108,11 @@
   }
 
   .faq-title {
+    font-size: 48px;
     margin-bottom: 24px;
+  }
+
+  .question-list {
+    min-width: 867px;
   }
 }
