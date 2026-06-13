@@ -2,7 +2,11 @@
 background-color: var(--color-japanese-laurel-light);
 }
 
-.container-burger-menu {
+.header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     padding: 6px 16px;
 }
 
@@ -10,11 +14,8 @@ background-color: var(--color-japanese-laurel-light);
     fill: var(--color-white);
 }
 
-.header-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+.header-actions {
+    display: none;
 }
 
 .burger-btn {
@@ -86,7 +87,7 @@ margin-bottom: 32px;
 }
 
 .mobile-tablet-nav-link {
-    --font-family-primary: 'Public Sans', sans-serif;
+    font-family: var(--font-family-primary);
     font-weight: 600;
     font-size: 18px;
     line-height: 1.5;
@@ -100,17 +101,71 @@ margin-bottom: 32px;
     text-align: center;
     border:  1px solid var(--color-japanese-laurel);
     border-radius: 6px;
-    --font-family-primary: 'Public Sans', sans-serif;
+    font-family: var(--font-family-primary);
         font-weight: 600;
         font-size: 18px;
         line-height: 1.5;
 }
 
 @media only screen and (min-width: 768px) {
-    .header-container{
-        padding: 6px 2px;
+ .header-container{
+    padding: 6px 32px;
+ }
+
+.header-actions {
+    display: flex;
+    margin-left: auto;
+    background-color: var(--color-japanese-laurel);
+    border: 1px solid var(--color-japanese-laurel);
+    border-radius: 6px;
+    padding: 4px 24px;
+        font-family: var(--font-family-primary);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        color: var(--color-white);   
 }
 
+.burger-btn {
+    /* position: absolute; */ 
+    right: 32px;
+    top: 16px;  
+}
+
+
+
+.mobile-tablet-menu{
+    border-bottom: 3px solid var(--color-japanese-laurel) ;
+    background-color: var(--color-japanese-laurel-light);
+}
+
+.mobile-tablet-nav {
+    background-color: var(--color-japanese-laurel-light);
+    right: 0;
+    top: 0;
+    z-index: 99999;
+    left: auto;
+    position: fixed;
+    padding: 0 32px;
+    width: 286px;
+    height: 100%;
+}
+
+.mobile-tablet-nav-item {
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-tablet-nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 24px;
+}
+.mobile-tablet-menu-container {
+    background-color: var(--opacity-neutral-darkest-30);
+}
 }
     
 @media only screen and (min-width: 1440px) {

@@ -33,5 +33,6 @@
   --opacity-white-20: rgba(255, 255, 255, 0.2);
   --opacity-neutral-darkest-10: rgba(1, 4, 0, 0.1);
   --opacity-neutral-darkest-15: rgba(1, 4, 0, 0.15);
+  --opacity-neutral-darkest-30: rgba(1, 4, 0, 0.3);
   --opacity-neutral-darkest-60: rgba(1, 4, 0, 0.6);
 }
