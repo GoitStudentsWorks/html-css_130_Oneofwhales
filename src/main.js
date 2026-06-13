@@ -1,3 +1,4 @@
+// JS for button faq section
 const questionBtn = document.querySelectorAll('.question-btn');
 
 questionBtn.forEach(btn => {
