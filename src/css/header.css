@@ -1,1 +1,119 @@
+.header {
+background-color: var(--color-japanese-laurel-light);
+}
 
+.container-burger-menu {
+    padding: 6px 16px;
+}
+
+.header-logo-svg {
+    fill: var(--color-white);
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.burger-btn {
+   background: none;
+   border: none;
+   margin-left: auto;
+}
+
+.burger-icon {
+    fill: var(--color-white);
+}
+
+.mobile-tablet-menu-container{
+    position: fixed;
+    padding: 6px 16px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-japanese-laurel-light);
+    width: 100vw;
+    height: 100%; 
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    overflow: auto;
+    overscroll-behavior: contain;
+    box-sizing: border-box;
+}
+
+.mobile-tablet-menu-container.is-open {
+    opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+}
+
+.mobile-tablet-menu {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 64px;
+    align-items: center;
+}
+
+.header-logo-svg {
+    fill: var(--color-white)
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    margin-left: auto;
+}
+
+.close-icon {
+    fill: var(--color-white)
+}
+.mobile-tablet-nav-list {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start;
+padding: 0;
+margin: 0;
+}
+
+.mobile-tablet-nav-item{
+margin-bottom: 32px;
+}
+
+.mobile-tablet-nav-link {
+    --font-family-primary: 'Public Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--color-white);
+}
+
+.mobile-tablet-nav-item-order {
+    background-color: var(--color-japanese-laurel);
+    padding: 6px 0;
+    align-self: stretch;
+    text-align: center;
+    border:  1px solid var(--color-japanese-laurel);
+    border-radius: 6px;
+    --font-family-primary: 'Public Sans', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.5;
+}
+
+@media only screen and (min-width: 768px) {
+    .header-container{
+        padding: 6px 2px;
+}
+
+}
+    
+@media only screen and (min-width: 1440px) {
+    
+}
+    
