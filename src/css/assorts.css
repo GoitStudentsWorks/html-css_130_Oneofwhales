@@ -99,6 +99,14 @@
   line-height: 1.5;
   width: 100%;
   padding: 8px 0;
+  transition: var(--transition-base);
+}
+
+.assorts-btn:hover,
+.assorts-btn:focus {
+  background-color: var(--color-japanese-laurel);
+  color: var(--color-white);
+  box-shadow: var(--shadow-card);
 }
 
 .assorts-item:not(:last-child) {
