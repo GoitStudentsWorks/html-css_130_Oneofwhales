@@ -85,7 +85,6 @@
 .question-list-item.is-open .answer {
   max-height: 100px;
   opacity: 1;
-  overflow: auto;
 
   margin-bottom: 20px;
 }
