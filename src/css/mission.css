@@ -12,6 +12,7 @@
     font-size: 36px;
     line-height: 1.2;
     letter-spacing: -0.01em;
+    margin-bottom: 24px;
 }
 
 .mission-text {
@@ -21,26 +22,15 @@
     color: #fff;
 }
 
-@media screen and (min-width: 375px) and (max-width: 767px) {
-    .mission-title {
-        margin-bottom: 24px;
-    }
-
-    .mission-info {
-        margin-bottom: 32px;
-    }
-}
-
 @media screen and (min-width: 768px) {
     .mission-info {
         display: flex;
-        flex-direction: row;
         column-gap: 24px;
-        margin-bottom: 32px;
     }
 
     .mission-title {
         max-width: 340px;
+        margin-bottom: 0;
     }
 
     .mission-text {
@@ -50,9 +40,6 @@
 
 @media screen and (min-width: 1440px) {
     .mission-info {
-        display: flex;
-        flex-direction: row;
-        column-gap: 24px;
         margin-bottom: 80px;
     }
 
