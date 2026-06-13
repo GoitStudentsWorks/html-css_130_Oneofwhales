@@ -1,19 +1,124 @@
 .benefits {
-  background: #1a5901;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  width: 375px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  color: var(--color-japanese-laurel-lightest);
 }
-.container {
+.benefits-bg {
+  background-color: var(--color-japanese-laurel);
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  box-sizing: border-box;
+  padding: 64px 16px;
 }
+
+.benefits-img {
+  width: 100%;
+  max-width: 343px;
+  height: auto;
+  margin-bottom: 24px;
+}
+
 .benefits-title {
+  font-family: var(--font-family-secondary);
+  color: var(--color-japanese-laurel-lightest);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin-bottom: 24px;
 }
 .benefits-description {
+  margin-bottom: 32px;
+  font-family: var(--font-family-primary);
+  font-size: 18px;
 }
-.benefits-list {
-}
-.benefits-item {
-}
+
 .benefits-icon {
+  margin-bottom: 16px;
+  fill: var(--color-white);
 }
 .benefits-subtitle {
+  margin-bottom: 16px;
+  font-family: var(--font-family-secondary);
 }
 .benefits-text {
+  font-family: var(--font-family-primary);
+  margin-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+  #benefits {
+    width: auto;
+    max-width: 720px;
+  }
+
+  .benefits-wrapper {
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-start;
+  }
+  .benefits-img {
+    max-width: 100%;
+    height: auto;
+  }
+  .benefits-content {
+    flex: 1;
+  }
+  .benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .benefits-item {
+    flex: 1 1 calc(50% - 16px);
+    align-items: flex-start;
+    text-align: left;
+  }
+  .benefits-icon {
+    margin-right: 12px;
+  }
+  .benefits-description {
+    margin-bottom: 32px;
+  }
+  .benefits-subtitle {
+    margin-bottom: 16px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .benefits-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: flex-start;
+  }
+  .benefits-img {
+    max-width: 644px;
+    flex-shrink: 0;
+    margin-bottom: 0;
+    width: 100%;
+    height: auto;
+  }
+  .benefits-content {
+    flex: 1;
+  }
+  .benefits-title {
+    font-size: 48px;
+  }
+  .benefits-text {
+    margin-bottom: 24px;
+    gap: 24px;
+    font-size: 16px;
+  }
+  .benefits-subtitle {
+    font-size: 20px;
+  }
 }
