@@ -8,3 +8,20 @@ questionBtn.forEach(btn => {
     item.classList.toggle('is-open');
   });
 });
+
+//JS for back to top btn
+const backToTopBtn = document.querySelector('.back-to-top-btn');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    backToTopBtn.classList.add('is-visible');
+  } else {
+    backToTopBtn.classList.remove('is-visible');
+  }
+});
+
+backToTopBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+  });
+});
