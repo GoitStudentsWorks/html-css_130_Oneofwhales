@@ -86,9 +86,10 @@
   }
   .benefits-item {
     flex: 1 1 auto;
-    width: calc((100% - 32px) / 2);
+    width: calc((100% - 16px) / 2);
     align-items: flex-start;
     text-align: left;
+    margin-bottom: 0;
   }
 
   .benefits-description {
@@ -97,8 +98,9 @@
   .benefits-subtitle {
     margin-bottom: 16px;
   }
-  .benefits-text {
-    margin-bottom: 0;
+  .benefits-item,
+  .benefits-item:last-child {
+    margin-bottom: 0 !important;
   }
 }
 
@@ -130,5 +132,8 @@
   }
   .benefits-list {
     gap: 24px;
+  }
+  .benefits-item {
+    width: calc((100% - 32px) / 2);
   }
 }
