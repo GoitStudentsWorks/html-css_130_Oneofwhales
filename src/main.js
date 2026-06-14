@@ -9,9 +9,10 @@ function toggleClass(el, elClass, condition) {
     : el.classList.toggle(elClass, condition);
 }
 
-function toggleMenu(mobileMenu, headerContainer, condition) {
+function toggleMenu(mobileMenu, headerContainer, header, condition) {
   toggleClass(mobileMenu, 'is-open', condition);
   toggleClass(headerContainer, 'is-open-mobile', condition);
+  toggleClass(header, 'is-open-mobile', condition);
 }
 
 // JS for button faq section
@@ -55,23 +56,29 @@ const burgerMenuBtn = getElementByClass('.burger-btn');
 const closeMenuBtn = getElementByClass('.close-btn');
 const mobileMenu = getElementByClass('.mobile-tablet-menu-container');
 const headerContainer = getElementByClass('.header-container');
+const header = getElementByClass('.header');
 
 burgerMenuBtn.addEventListener('click', () => {
-  toggleMenu(mobileMenu, headerContainer, true);
+  toggleMenu(mobileMenu, headerContainer, header, true);
 });
 
 closeMenuBtn.addEventListener('click', () => {
-  toggleMenu(mobileMenu, headerContainer, false);
+  toggleMenu(mobileMenu, headerContainer, header, false);
 });
 
 document.addEventListener('keydown', event => {
   if (event.key === 'Escape') {
-    toggleMenu(mobileMenu, headerContainer, false);
+    toggleMenu(mobileMenu, headerContainer, header, false);
   }
 });
 
 mobileMenu.addEventListener('click', event => {
   if (event.target === mobileMenu) {
-    toggleMenu(mobileMenu, headerContainer, false);
+    toggleMenu(mobileMenu, headerContainer, header, false);
   }
+});
+
+window.addEventListener('scroll', () => {
+  const isScroled = window.scrollY > 0;
+  toggleClass(header, 'is-scroll', isScroled);
 });
