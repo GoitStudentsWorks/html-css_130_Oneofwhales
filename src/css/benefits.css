@@ -131,6 +131,7 @@
     font-size: 20px;
   }
   .benefits-list {
+    width: 644px;
     gap: 24px;
   }
   .benefits-item {
