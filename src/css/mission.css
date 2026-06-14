@@ -13,6 +13,7 @@
     line-height: 1.2;
     letter-spacing: -0.01em;
     margin-bottom: 24px;
+    font-family: "Chivo", sans-serif;
 }
 
 .mission-text {
@@ -20,6 +21,7 @@
     font-size: 18px;
     line-height: 1.5;
     color: #fff;
+    font-family: "Public Sans", sans-serif;
 }
 
 @media screen and (min-width: 768px) {
@@ -28,13 +30,13 @@
         column-gap: 24px;
     }
 
-    .mission-title {
-        max-width: 340px;
-        margin-bottom: 0;
+    .mission-title,
+    .mission-text {
+        flex: 1;
     }
 
-    .mission-text {
-        max-width: 380px;
+    .mission-title {
+        margin-bottom: 0;
     }
 }
 
@@ -44,11 +46,6 @@
     }
 
     .mission-title {
-        max-width: 644px;
         font-size: 48px;
-    }
-
-    .mission-text {
-        max-width: 644px;
     }
 }
