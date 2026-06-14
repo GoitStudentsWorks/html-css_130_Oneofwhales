@@ -90,6 +90,7 @@
 }
 
 .mobile-tablet-nav-link {
+    display: block;
     font-family: var(--font-family-primary);
     font-weight: 600;
     font-size: 18px;
@@ -98,7 +99,6 @@
 }
 
 .mobile-tablet-nav-item-order {
-    display: block;
     background-color: var(--color-japanese-laurel);
     padding: 6px 0;
     align-self: center;
@@ -235,7 +235,8 @@
 }
 
 .desktop-nav-link {
-      color: var(--color-white);
+    display: block;
+    color: var(--color-white);
       transition: opacity var(--transition-base);
 }
 
@@ -245,7 +246,6 @@
 }
 
 .desktop-nav-item-order {
-    display: block;
     background-color: var(--color-japanese-laurel);
         border-radius: 6px;
         padding: 4px 24px;
