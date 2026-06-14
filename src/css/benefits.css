@@ -56,16 +56,14 @@
 
 .benefits-text {
   font-family: var(--font-family-primary);
-  margin-bottom: 32px;
+  margin-bottom: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
 }
-.benefits-item {
+
+.benefits-item:not(:last-child) {
   margin-bottom: 32px;
-}
-.benefits-item:last-child {
-  margin-bottom: 0;
 }
 
 @media only screen and (min-width: 768px) {
