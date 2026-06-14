@@ -78,7 +78,7 @@
   .benefits-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px 32px;
+    gap: 32px 16px;
   }
   .benefits-item {
     flex: 1 1 auto;
