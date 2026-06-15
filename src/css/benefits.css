@@ -6,16 +6,7 @@
   margin: 0 auto;
   box-sizing: border-box;
   color: var(--color-japanese-laurel-lightest);
-}
-.benefits-bg {
   background-color: var(--color-japanese-laurel);
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  box-sizing: border-box;
 }
 
 .benefits-img {
