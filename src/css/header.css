@@ -144,7 +144,6 @@
     }
 
     .header-actions {
-        display: block;
         display: flex;
         margin-left: auto;
         background-color: var(--color-japanese-laurel);
@@ -156,6 +155,7 @@
         line-height: 1.5;
         color: var(--color-white);
     }
+
 
     .burger-btn {
         margin-left: 16px;
@@ -268,8 +268,12 @@
     .desktop-nav-link:focus {
         opacity: 0.5;
     }
+    .desktop-nav-link:active {
+        opacity: 0.6;
+    }
 
     .desktop-nav-item-order {
+        display: block;
         background-color: var(--color-japanese-laurel);
         border-radius: 6px;
         padding: 4px 24px;
@@ -278,6 +282,16 @@
         font-size: 16px;
         line-height: 1.5;
         color: var(--color-white);
+        transition: background-color var(--transition-base), color var(--transition-base), box-shadow var(--transition-base)
+    }
+
+    .desktop-nav-item-order:hover,
+    .desktop-nav-item-order:focus {
+        background-color: var(--color-white);
+        color: var(--color-neutral-darkest);
+    }
+    .desktop-nav-item-order:active {
+        box-shadow: var(--shadow-inset);
     }
 
     .mobile-tablet-menu-container {
