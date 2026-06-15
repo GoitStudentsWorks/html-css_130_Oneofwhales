@@ -1,1 +1,135 @@
+/* Базові стилі (mobile first) */
+.footer {
+  background-color: var(--color-scheme-5-background);
+  color: #fff;
+  font-family: 'Public Sans', sans-serif;
+  padding: 80px 16px;
+}
 
+.footer-content {
+  display: flex;
+  flex-direction: column; /* мобільна версія */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.footer-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+  display: flex;
+  flex-direction: column; /* вертикальне меню */
+  gap: 32px;
+  text-align: center;
+}
+
+.footer-nav-list a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-nav-list a:hover,
+.footer-nav-list a:focus {
+  color: var(--color-scheme-5-text);
+}
+
+.social-list-icons {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 11px;
+  padding: 0;
+  margin: 0;
+}
+
+.social-list-icons svg {
+  fill: #fff;
+  transition: fill 0.3s;
+}
+
+.social-list-icons svg:hover,
+.social-list-icons svg:focus {
+  fill: var(--color-scheme-2-accent);
+}
+
+/* Credits завжди окремим рядком */
+.footer-credits {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.footer-divider {
+  border: 1px solid var(--color-scheme-5-border);
+}
+.footer-credits-text {
+  margin-top: 32px;
+}
+/* Tablet ≥768px */
+@media (min-width: 768px) {
+  .footer {
+    padding: 80px 32px;
+  }
+  .footer-logo {
+    text-align: center; /* логотип по центру */
+    margin-bottom: 24px;
+  }
+
+  .footer-nav-list {
+    flex-direction: row; /* меню горизонтальне */
+    justify-content: center;
+    gap: 32px;
+    text-align: center;
+  }
+
+  .footer-social-links {
+    margin-top: 24px;
+    text-align: center; /* соцмережі під меню */
+  }
+}
+
+/* Desktop ≥1440px */
+@media (min-width: 1440px) {
+  .footer {
+    padding: 80px 64px;
+  }
+  .footer-content {
+    flex-direction: row; /* ряд */
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .footer-logo {
+    text-align: left; /* логотип зліва */
+    width: 312px;
+  }
+
+  .footer-nav-list {
+    justify-content: center;
+    gap: 25px;
+    text-align: center;
+  }
+
+  .footer-social-links {
+    margin-top: 0;
+    text-align: right; /* соцмережі справа */
+  }
+
+  .footer-nav-list a {
+    font-size: 16px;
+  }
+
+  .social-list-icons {
+    width: 312px;
+    gap: 16px;
+  }
+}
