@@ -1,5 +1,5 @@
 .mission {
-    background-color: #5E8A4D;
+    background-color: var(--color-japanese-laurel-light);
 }
 
 .mission-info {
@@ -7,21 +7,21 @@
 }
 
 .mission-title {
-    color: #fff;
+    color: var(--color-white);
     font-weight: 400;
     font-size: 36px;
     line-height: 1.2;
     letter-spacing: -0.01em;
     margin-bottom: 24px;
-    font-family: "Chivo", sans-serif;
+    font-family: var(--font-family-secondary);
 }
 
 .mission-text {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.5;
-    color: #fff;
-    font-family: "Public Sans", sans-serif;
+    color: var(--color-white);
+    font-family: var(--font-family-primary);
 }
 
 @media screen and (min-width: 768px) {
