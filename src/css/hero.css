@@ -12,8 +12,8 @@
 }
 
 .hero-title {
-    font-family: "Chivo", sans-serif;
-    color: #ffffff;
+    font-family: var(--font-family-secondary);
+    color: var(--color-white);
     font-weight: 400;
     font-size: 40px;
     letter-spacing: -0.01em;
@@ -22,8 +22,8 @@
 }
 
 .hero-text {
-    font-family: "Public Sans", sans-serif;
-    color: #ffffff;
+    font-family: var(--font-family-primary);
+    color: var(--color-white);
     font-weight: 400;
     font-size: 18px;
     line-height: 1.5;
@@ -31,9 +31,9 @@
 }
 
 .hero-link {
-    font-family: "Public Sans", sans-serif;
-    background-color: #ffffff;
-    color: #010400;
+    font-family: var(--font-family-primary);
+    background-color: var(--color-white);
+    color: var(--color-neutral-darkest);
     display: flex;
     width: 100%;
     padding: 8px 0;
@@ -47,7 +47,7 @@
 
 .hero-link:hover,
 .hero-link:focus {
-    background-color: #5e8a4d;
+    background-color: var(--color-japanese-laurel-light);
 }
 
 @media screen and (min-resolution: 192dpi) {
@@ -90,6 +90,7 @@
 
     .hero .container {
         padding: 326px 64px;
+        margin: 0;
     }
 
     .hero-title {
