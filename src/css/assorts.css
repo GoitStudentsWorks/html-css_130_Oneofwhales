@@ -106,6 +106,9 @@
 .assorts-btn:focus {
   background-color: var(--color-japanese-laurel);
   color: var(--color-white);
+}
+
+.assorts-btn:active {
   box-shadow: var(--shadow-card);
 }
 
