@@ -1,59 +1,94 @@
 <header class="header">
-  <div class="container">
-    <div class="header-container">
-      <a class="header-logo" href="/index.html">
-        <svg width="142" height="60" class="header-logo-svg">
-          <use href="/img/company-logo.svg#header-logo"></use>
-        </svg>
-      </a>
-      <button class="burger-btn" type="button">
-        <svg width="32" height="32" class="burger-icon">
-          <use href="/img/sprite.svg#icon-menu"></use>
-        </svg>
-      </button>
-      <div class="mobile-tablet-menu-container">
-        <div class="mobile-tablet-menu">
-          <a class="header-logo" href="/index.html">
-            <svg width="142" height="60" class="header-logo-svg">
-              <use href="/img/company-logo.svg#header-logo"></use>
-            </svg>
-          </a>
+  <div class="header-container container">
+    <a class="header-logo" href="/index-html">
+      <svg width="142" height="60" class="header-logo-svg">
+        <use href="/img/company-logo.svg#header-logo"></use>
+      </svg>
+    </a>
 
-          <button class="close-btn" type="button">
-            <svg width="32" height="32" class="close-icon">
-              <use href="/img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-        <nav class="mobile-tablet-nav">
-          <ul class="mobile-tablet-nav-list">
-            <li class="mobile-tablet-nav-item">
-              <a href="#home" class="mobile-tablet-nav-link">Home</a>
-            </li>
-            <li class="mobile-tablet-nav-item">
-              <a href="#mission" class="mobile-tablet-nav-link">Mission</a>
-            </li>
-            <li class="mobile-tablet-nav-item">
-              <a href="#benefits" class="mobile-tablet-nav-link">Benefits</a>
-            </li>
-            <li class="mobile-tablet-nav-item">
-              <a href="#assorts" class="mobile-tablet-nav-link">Assortment</a>
-            </li>
-            <li class="mobile-tablet-nav-item">
-              <a href="#feedbacks" class="mobile-tablet-nav-link">Feedbacks</a>
-            </li>
-            <li class="mobile-tablet-nav-item">
-              <a href="#faq" class="mobile-tablet-nav-link">FAQ</a>
-            </li>
-            <li class="mobile-tablet-nav-item">
-              <a href="#contacts" class="mobile-tablet-nav-link">Contacts</a>
-            </li>
-            <li class="mobile-tablet-nav-item">
-              <a href="#assorts" class="mobile-tablet-nav-link">Order</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+    <div class="header-actions">
+      <a href="#assorts" class="header-order-tablet">Order</a>
     </div>
+
+    <button class="burger-btn" type="button">
+      <svg width="24" height="24" class="burger-icon">
+        <use href="/img/sprite.svg#icon-menu"></use>
+      </svg>
+    </button>
+    <nav class="desktop-nav">
+      <ul class="desktop-nav-list">
+        <li class="desktop-nav-item">
+          <a href="/index-html" class="desktop-nav-link">Home</a>
+        </li>
+        <li class="desktop-nav-item">
+          <a href="#mission" class="desktop-nav-link">Mission</a>
+        </li>
+        <li class="desktop-nav-item">
+          <a href="#benefits" class="desktop-nav-link">Benefits</a>
+        </li>
+        <li class="desktop-nav-item">
+          <a href="#assorts" class="desktop-nav-link">Assortment</a>
+        </li>
+        <li class="desktop-nav-item">
+          <a href="#feedback" class="desktop-nav-link">Feedbacks</a>
+        </li>
+        <li class="desktop-nav-item">
+          <a href="#faq" class="desktop-nav-link">FAQ</a>
+        </li>
+        <li class="desktop-nav-item">
+          <a href="#contacts" class="desktop-nav-link">Contacts</a>
+        </li>
+        <li class="desktop-nav-item-order">
+          <a href="#assorts" class="desktop-nav-link-order">Order</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!--#region burger-menu -->
+
+    <div class="mobile-tablet-menu-container">
+      <div class="mobile-tablet-menu container">
+        <a class="header-logo" href="/index.html">
+          <svg width="142" height="60" class="header-logo-svg">
+            <use href="/img/company-logo.svg#header-logo"></use>
+          </svg>
+        </a>
+
+        <button class="close-btn" type="button">
+          <svg width="16" height="16" class="close-icon">
+            <use href="/img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+      <nav class="mobile-tablet-nav">
+        <ul class="mobile-tablet-nav-list">
+          <li class="mobile-tablet-nav-item">
+            <a href="#home" class="mobile-tablet-nav-link">Home</a>
+          </li>
+          <li class="mobile-tablet-nav-item">
+            <a href="#mission" class="mobile-tablet-nav-link">Mission</a>
+          </li>
+          <li class="mobile-tablet-nav-item">
+            <a href="#benefits" class="mobile-tablet-nav-link">Benefits</a>
+          </li>
+          <li class="mobile-tablet-nav-item">
+            <a href="#assorts" class="mobile-tablet-nav-link">Assortment</a>
+          </li>
+          <li class="mobile-tablet-nav-item">
+            <a href="#feedbacks" class="mobile-tablet-nav-link">Feedbacks</a>
+          </li>
+          <li class="mobile-tablet-nav-item">
+            <a href="#faq" class="mobile-tablet-nav-link">FAQ</a>
+          </li>
+          <li class="mobile-tablet-nav-item">
+            <a href="#contacts" class="mobile-tablet-nav-link">Contacts</a>
+          </li>
+          <li class="mobile-tablet-nav-item-order">
+            <a href="#assorts" class="mobile-tablet-nav-link">Order</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!--#endregion burger-menu -->
   </div>
 </header>

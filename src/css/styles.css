@@ -13,3 +13,6 @@
 @import url('./faq.css');
 @import url('./contacts.css');
 @import url('./footer.css');
+
+/* Styles for back to top button */
+@import url('./back-to-top-btn');

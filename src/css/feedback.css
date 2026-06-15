@@ -98,6 +98,10 @@
     font-size: 48px;
   }
 
+  .feedback-intro {
+    margin: 0 auto 80px;
+  }
+
   .feedback-list {
     width: 1312px;
   }
