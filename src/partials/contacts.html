@@ -1,73 +1,77 @@
 <section id="contacts">
   <div class="container">
     <div class="contacts-main-wrap">
-        <div class="contacts-title-wrap">
-            <h3 class="contacts-subtitle">Contacts</h3>
-            <h2 class="contacts-title">Get in Touch</h2>
-            <p class="contacts-title-subtext">We'd love to hear from you anytime!</p>
+        <div class="main-form-wrap">
+            <div class="contacts-title-wrap">
+                <h3 class="contacts-subtitle">Contacts</h3>
+                <h2 class="contacts-title">Get in Touch</h2>
+                <p class="contacts-title-subtext">We'd love to hear from you anytime!</p>
+            </div>
+            <adress class="adress-wrap">
+                <ul class="contacts-list">
+                    <li class="contacts-list-item">
+                        <svg width="24px" height="24px" class="contacts-list-svg">
+                            <use href="/img/sprite.svg#icon-envelope"></use>
+                        </svg>
+                        <a href="hello@organicstore.com" class="contacts-list-mail">hello@organicstore.com</a>
+                    </li>
+                    <li class="contacts-list-item">
+                        <svg width="24px" height="24px" class="contacts-list-svg">
+                            <use href="/img/sprite.svg#icon-phone"></use>
+                        </svg>
+                        <a href="+15553291024" class="contacts-list-tel">+1 (555) 329-1024</a>
+                    </li>
+                </ul>
+            </adress>
+            <form class="contacts-form">
+                <ul class="contacts-form-list">
+                    <li class="form-input-item">
+                        <label for="form-name" class="form-label">
+                          Name
+                        </label>
+                        <input name="name"
+                        id="form-name"
+                        type="text"
+                        class="contacts-form-input"
+                        placeholder="Sarah"
+                        required>
+                    </li>
+                    <li class="form-input-item">
+                        <label for="form-email" class="form-label">
+                          Email
+                        </label>
+                        <input name="email"
+                        id="form-email"
+                        type="email"
+                        class="contacts-form-input"
+                        placeholder="hello@organic.com"
+                        required>
+                    </li>
+                    <li class="form-input-item">
+                        <label for="form-textarea" class="form-label">
+                          Message
+                        </label>
+                        <textarea id="form-textarea"
+                        name="message"
+                        placeholder="Type your message..."
+                        maxlength="500"
+                        class="textarea-text"></textarea>
+                    </li>
+                    <button type="submit" class="contacts-form-button">Submit</button>
+                </ul>
+            </form>
         </div>
-        <adress class="adress-wrap">
-            <ul class="contacts-list">
-                <li class="contacts-list-item">
-                    <svg width="24px" height="24px" class="contacts-list-svg">
-                        <use href="/img/sprite.svg#icon-envelope"></use>
-                    </svg>
-                    <a href="hello@organicstore.com" class="contacts-list-mail">hello@organicstore.com</a>
-                </li>
-                <li class="contacts-list-item">
-                    <svg width="24px" height="24px" class="contacts-list-svg">
-                        <use href="/img/sprite.svg#icon-phone"></use>
-                    </svg>
-                    <a href="+15553291024" class="contacts-list-tel">+1 (555) 329-1024</a>
-                </li>
-            </ul>
-        </adress>
-        <form class="contacts-form">
-            <ul class="contacts-form-list">
-                <li class="form-input-item">
-                    <label for="form-name" class="form-label">
-                      Name
-                    </label>
-                    <input name="name"
-                    id="form-name"
-                    type="text"
-                    class="contacts-form-input"
-                    placeholder="Sarah"
-                    required>
-                </li>
-                <li class="form-input-item">
-                    <label for="form-email" class="form-label">
-                      Email
-                    </label>
-                    <input name="email"
-                    id="form-email"
-                    type="email"
-                    class="contacts-form-input"
-                    placeholder="hello@organic.com"
-                    required>
-                </li>
-                <li class="form-input-item">
-                    <label for="form-textarea" class="form-label">
-                      Message
-                    </label>
-                    <textarea id="form-textarea"
-                    name="message"
-                    placeholder="Type your message..."
-                    maxlength="500">
-                    </textarea>
-                </li>
-                <button type="submit" class="contacts-form-button">Submit</button>
-            </ul>
-        </form>
-    </div>
-    <div class="contacts-img-wrap">
-        <picture class="contacts-picture">
-            <source media="(min-width: 1440px)"
-                srcset="/img/contacts/contacts-d@1x.jpg 1x, /img/contacts/contacts-d@2x.jpg 2x">
-            <source media="(min-width: 768px)"
-                srcset="/img/contacts/contacts-t@1x.jpg 1x, /img/contacts/contacts-t@2x.jpg 2x">
-            <img src="/img/contacts/contacts-m@1x.jpg" alt="Friendly team">
-        </picture>
+        <div class="contacts-img-wrap">
+            <picture class="contacts-picture">
+                <source media="(min-width: 1440px)"
+                    srcset="/img/contacts/contacts-d@1x.jpg 1x, /img/contacts/contacts-d@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                    srcset="/img/contacts/contacts-t@1x.jpg 1x, /img/contacts/contacts-t@2x.jpg 2x">
+                <source
+                    srcset="/img/contacts/contacts-m@1x.jpg 1x, /img/contacts/contacts-m@2x.jpg 2x">
+                <img src="/img/contacts/contacts-m@1x.jpg" alt="Friendly team">
+            </picture>
+        </div>
     </div>
   </div>
 </section>
