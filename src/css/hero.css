@@ -5,8 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  max-width: 375px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .hero .container {
@@ -69,7 +68,6 @@
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url(/img/hero/herobg-t@1x.jpg);
-    max-width: 768px;
   }
 
   .hero .container {
@@ -99,7 +97,6 @@
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url(/img/hero/herobg-d@1x.jpg);
-    max-width: 1440px;
   }
 
   .hero .container {

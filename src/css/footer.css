@@ -6,8 +6,6 @@
   flex-direction: column;
   padding: 80px 16px;
 }
-.container {
-}
 .footer-logo {
   display: flex;
   justify-content: center;
@@ -22,10 +20,6 @@
   justify-content: center;
   align-items: center;
 }
-.footer-column {
-}
-.footer-nav {
-}
 .footer-nav-list {
   color: var(--color-white);
   display: flex;
@@ -38,8 +32,6 @@
   line-height: 1.5;
   font-family: var(--font-family-primary);
   margin-bottom: 24px;
-}
-.footer-social-links {
 }
 .social-list-icons {
   fill: var(--color-white);
@@ -97,7 +89,7 @@
     height: 24px;
   }
 
-  .svg-icons-wraper {
+  .svg-icons-wrapper {
     padding: 10px;
   }
 }

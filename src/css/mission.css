@@ -1,51 +1,51 @@
 .mission {
-    background-color: var(--color-japanese-laurel-light);
+  background-color: var(--color-japanese-laurel-light);
 }
 
 .mission-info {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .mission-title {
-    color: var(--color-white);
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 1.2;
-    letter-spacing: -0.01em;
-    margin-bottom: 24px;
-    font-family: var(--font-family-secondary);
+  color: var(--color-white);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin-bottom: 24px;
+  font-family: var(--font-family-secondary);
 }
 
 .mission-text {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.5;
-    color: var(--color-white);
-    font-family: var(--font-family-primary);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--color-white);
+  font-family: var(--font-family-primary);
 }
 
 @media screen and (min-width: 768px) {
-    .mission-info {
-        display: flex;
-        column-gap: 24px;
-    }
+  .mission-info {
+    display: flex;
+    column-gap: 24px;
+  }
 
-    .mission-title,
-    .mission-text {
-        flex: 1;
-    }
+  .mission-title,
+  .mission-text {
+    flex: 1;
+  }
 
-    .mission-title {
-        margin-bottom: 0;
-    }
+  .mission-title {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-    .mission-info {
-        margin-bottom: 80px;
-    }
+  .mission-info {
+    margin-bottom: 80px;
+  }
 
-    .mission-title {
-        font-size: 48px;
-    }
+  .mission-title {
+    font-size: 48px;
+  }
 }

@@ -4,19 +4,11 @@
     top: 0;
     z-index: 1000;
     width: 100%;
-    transition: opacity var(--transition-base);
+    transition: transform var(--transition-base);
 }
 
-.header.is-scroll {
-    opacity: 0.7;
-}
-
-.header.is-scroll:hover {
-    opacity: 1;
-}
-
-.header.is-open-mobile {
-    opacity: 1;
+.header.is-hidden {
+    transform: translateY(-100%);
 }
 
 .header-container {
@@ -58,8 +50,6 @@
   right: 0;
   bottom: 0;
   background-color: var(--color-japanese-laurel-light);
-  width: 100vw;
-  height: 100%;
   z-index: 999;
   visibility: hidden;
   overflow: auto;
