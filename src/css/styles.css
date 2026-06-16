@@ -1,3 +1,6 @@
+/* Vendor reset (bundled locally instead of an external CDN request) */
+@import 'modern-normalize';
+
 /* Common styles */
 @import url('./variables.css');
 @import url('./base.css');

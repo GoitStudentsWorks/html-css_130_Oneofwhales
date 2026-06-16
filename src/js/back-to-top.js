@@ -4,7 +4,9 @@ import { getElementByClass, toggleClass } from './utils.js';
 const backToTopBtn = getElementByClass('.back-to-top-btn');
 const section = getElementByClass('.benefits');
 
-window.addEventListener('scroll', () => {
+let ticking = false;
+
+function updateButton() {
   const isScrolledDown = window.scrollY > 0;
   toggleClass(backToTopBtn, 'is-visible', isScrolledDown);
 
@@ -17,7 +19,20 @@ window.addEventListener('scroll', () => {
     buttonBottom > sectionRect.top && buttonTop < sectionRect.bottom;
 
   toggleClass(backToTopBtn, 'is-benefits', isOverSection);
-});
+
+  ticking = false;
+}
+
+window.addEventListener(
+  'scroll',
+  () => {
+    if (!ticking) {
+      ticking = true;
+      requestAnimationFrame(updateButton);
+    }
+  },
+  { passive: true }
+);
 
 backToTopBtn.addEventListener('click', () => {
   window.scrollTo({
