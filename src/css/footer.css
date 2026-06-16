@@ -1,1 +1,149 @@
+.footer {
+  background-color: var(--color-japanese-laurel-darker);
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 16px;
+}
+.container {
+}
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
 
+.footer-logo-svg-wrapper {
+  width: 172px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-column {
+}
+.footer-nav {
+}
+.footer-nav-list {
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: var(--font-family-primary);
+  margin-bottom: 24px;
+}
+.footer-social-links {
+}
+.social-list-icons {
+  fill: var(--color-white);
+  display: flex;
+  gap: 11px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.svg-icons-wrapper {
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition-base);
+}
+.svg-icons-wrapper:hover,
+.svg-icons-wrapper:focus {
+  opacity: 0.5;
+}
+
+.svg-icons-wrapper:active {
+  opacity: 0.6;
+}
+
+.footer-divider {
+  margin-bottom: 32px;
+  border-color: var(--opacity-white-20);
+  margin-top: 0;
+}
+.footer-credits-text {
+  color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: var(--font-family-primary);
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .footer-nav-list {
+    flex-direction: row;
+  }
+
+  .svg-item-icons {
+    width: 24px;
+    height: 24px;
+  }
+
+  .svg-icons-wraper {
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .footer-container {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
+  .footer-nav-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+
+  .social-list-icons {
+    margin: 0;
+    gap: 0;
+    width: 312px;
+    justify-content: flex-end;
+  }
+
+  .footer-nav-list {
+    margin: 0;
+    margin-right: 32px;
+  }
+
+  .svg-icons-wrapper {
+    padding: 10px;
+  }
+
+  .footer-logo {
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+
+  .footer-logo-svg-wrapper {
+    width: 84px;
+    height: 36px;
+    flex-shrink: 0;
+  }
+
+  .footer-logo-svg {
+    width: 73px;
+    height: 36px;
+  }
+}
