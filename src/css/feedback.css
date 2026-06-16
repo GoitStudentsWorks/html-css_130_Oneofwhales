@@ -94,6 +94,8 @@
 
   .feedback-list {
     flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
   }
 
   .feedback-list-item {
