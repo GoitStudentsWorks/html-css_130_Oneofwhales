@@ -4,8 +4,9 @@ import { getElementByClass, toggleClass } from './utils.js';
 const header = getElementByClass('.header');
 
 let lastScrollY = window.scrollY;
+let ticking = false;
 
-window.addEventListener('scroll', () => {
+function updateHeader() {
   const currentScrollY = window.scrollY;
   const isMenuOpen = header.classList.contains('is-open-mobile');
   const scrollingDown = currentScrollY > lastScrollY;
@@ -16,4 +17,16 @@ window.addEventListener('scroll', () => {
   toggleClass(header, 'is-hidden', shouldHide);
 
   lastScrollY = currentScrollY;
-});
+  ticking = false;
+}
+
+window.addEventListener(
+  'scroll',
+  () => {
+    if (!ticking) {
+      ticking = true;
+      requestAnimationFrame(updateHeader);
+    }
+  },
+  { passive: true }
+);
