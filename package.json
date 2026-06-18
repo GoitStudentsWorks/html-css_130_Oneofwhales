@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/techtitans-organic-shop/",
+    "build": "vite build --base=/html-css_130_Oneofwhales/",
     "preview": "vite preview"
   },
   "devDependencies": {
